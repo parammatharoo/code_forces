@@ -798,3 +798,7 @@ to solve it.
 [22:21] : I got to know about that problem now I am implementing like that "I will input all of them in 2D vector and after that I will check for longest # in any row and I got the longest and how long it is then divide it by 2 I will got the column coadinate and through which I am looping the i+1 is my row coardinate" let's see I am making algorithm of that.
 [22:34] : Implementing code.
 [23:46] : Can't able to solve the question. Let it try tommorw.
+
+## 12-08-2026
+
+[22:49] : Working on 1985D.
