@@ -802,3 +802,7 @@ to solve it.
 ## 12-08-2026
 
 [22:49] : Working on 1985D.
+
+## 13-08-2026
+
+[22:44] : Trying to solving 2060B problem.
