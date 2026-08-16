@@ -1,0 +1,62 @@
+
+struct solver {
+
+    vector<int> index
+    vector<int> value
+}
+
+vector<int> answer(int k, solver s):
+    int change = 0
+
+    vector<int> answer
+
+    while(s.value.size() != 0):
+        for i in range(s.index.size()):
+            change = 0
+            for j in range(s.index.size()):
+                if (s.value[i] < s.value[i+1]):
+                    swap(s.value[i], s.value[i+1])
+                    swap(s.index[i], s.index[i+1])
+                    change = 1
+            if (change):
+                break
+
+
+        if (s.value.begin() <= k):
+            s.value.erase(s.value.begin())
+            answer.push(back(s.index.begin()))
+            s.index.erase(s.index.begin())
+        else:
+            s.value.begin() -= k
+
+    return answer
+
+int main() {
+    int t = 0 [number of test cases]
+    int n = 0 []
+    int k = 0
+
+    intput t
+
+    vector<vector<int>> result
+    result.resize(t)
+
+    for i in range(t):
+        input n, k
+
+        solver s
+        s.value.resize(n)
+        result[i].resize(n)
+
+        for j in range(n):
+            input value[j]
+            index.push_back(j+1)
+
+        result[i] = answer(k, s)
+
+    for i in range(t):
+        for j in range(result[i].size()):
+            print result[i][j] + " "
+
+        print(\n)
+}

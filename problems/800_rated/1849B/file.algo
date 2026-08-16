@@ -1,0 +1,41 @@
+init int t = 0, n = 0, m = 0, previous = 2001
+init bool found = 0
+
+input t
+
+vector<vector<int>> result(t)
+
+for i in range(t):
+    input n, m
+
+    vector<vector<int>> my_v;
+    my_v.resize(n, vector<int>m)
+
+    for j in rnage(n):
+        for k in range(m):
+            input my_v[j][k]
+
+    for j in range(n):
+        sort(my_v[j].begin(), my_v[j].end())
+
+    for j in range((n*m)-1):
+        for k in range(n):
+            if (j == my_v[k][0] && k != previous):
+                my_v[k].erase(my_v[k].begin() + k)
+                found = 1
+                result[i].push_back(k)
+                previous = k
+        if (found == 0):
+            break;
+            result[i].push_back(-1)
+        else:
+            found = 0
+
+for i in range(t):
+    for j in range(result[i].size):
+        print(result[i][j] + " ")
+
+    print(\n)
+
+
+

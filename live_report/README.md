@@ -806,3 +806,12 @@ to solve it.
 ## 13-08-2026
 
 [22:44] : Trying to solving 2060B problem.
+
+## 14-08-2026
+
+ [12:08] : Finding codeforces problem.
+
+## 16-08-2026
+
+[22:51] : Implementing 456A Laptops.
+[22:58] : Wrong input.
