@@ -1,26 +1,21 @@
 #include <iostream>
 
 int main() {
-  int l = 0, a = 0, b = 0;
-  int p = 0, n = 0;
+  int t = 0, a = 0, b = 0, counter = 0;
 
-  std::cin >> l;
+  std::cin >> t;
 
-  for (int i = 0; i < l; i++) {
+  for (int i = 0; i < t; i++) {
     a = 0, b = 0;
-
     std::cin >> a >> b;
-    if (a > b) {
-      p++;
-    } else if (a < b) {
-      n++;
+
+    if (a > b || b > a) {
+      std::cout << "Happy Alex" << std::endl;
+      return 0;
     }
   }
 
-  if (p >= n && p != 0)
-    std::cout << "Happy Alex" << std::endl;
-  else
-    std::cout << "Poor Alex" << std::endl;
+  std::cout << "Poor Alex" << std::endl;
 
   return 0;
 }
